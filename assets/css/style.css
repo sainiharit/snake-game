@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Pattaya&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+
+}
+
+body{
+    background: url(../bg.jpg);
+    height: 100vh;
+    width: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#board{
+    background:rgba(235, 229, 229, 0.4);
+    border: 2px solid black;
+    height: 90vmin;
+    width: 92vmin;
+    display: grid;
+    grid-template-columns: repeat(25, 1fr);
+    grid-template-rows: repeat(25, 1fr);
+    
+}
+
+.head{
+    background-color: rgb(0, 247, 255);
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.snake{
+    background-color: rgb(117, 161, 80);
+    border: 2px dotted black;
+    border-radius: 25px;
+}
+
+.food{
+    background: url(../frog.png);
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+
+#scoreBox{
+    position: absolute;
+    font-size: 60px;
+    top: 100px;
+    right: 50px;
+    font-family: 'Slabo 27px', serif;
+    background-color: rgba(176, 211, 176, 0.493);
+    padding: 20px;
+    margin-right: 500px;
+    margin-top: 120px;
+}
+
+#hiscoreBox{
+    position: absolute;
+    font-size: 60px;
+    top: 100px;
+    right: 50px;
+    font-family: 'Slabo 27px', serif;
+    background-color: rgba(176, 211, 176, 0.493);
+    padding: 20px;
+    margin-right: 50px;
+    margin-top: 120px;
+}
+
+.footer{
+    position: absolute;
+    top: 140px;
+    right: 200px;
+    font-size: 25px;
+    font-family: 'Sigmar One', cursive;
+    margin-left: 500px;
+    letter-spacing: 4px;
+}
+
+.name{
+    position: absolute;
+    top: 40px;
+    right: 100px;
+    font-family: 'Alex Brush', cursive;
+    font-weight: bold;
+    font-size: 120px;
+    line-height: 90px;
+    border-bottom: 6px solid black;
+}
